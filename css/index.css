@@ -1,0 +1,356 @@
+:root{
+    --background: #297373;
+    --secondary:#E9D758;
+    --action: #FF8552;
+}
+
+
+
+html,body {
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+}
+
+html {
+    font-size: 82.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: var(--action);
+    border-radius: 5rem;
+  }
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+            justify-content: space-between;
+    padding: 1.5rem 9%;
+    box-shadow: 15px 15px 50px rgba(0,0,0,0.15);
+  }
+
+
+.header .navbar a {
+    font-size: 1.2em;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  .header .navbar a:hover {
+    color: var(--secondary);
+  }
+  
+  .header .btn {
+    margin-top: 0;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .logo i {
+    color: var(--secondary);
+    padding-right: .5rem;
+  }
+
+
+  .home {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: none;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 80vh;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5rem;
+  }
+  
+  .home .content {
+    text-align: center;
+  }
+  
+  .home .content span {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 4vw;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .home .content h3 {
+    margin: 0;
+    font-size: 6vw;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .home .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+  }
+
+
+ .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 42rem;
+            flex: 1 1 42rem;
+            
+  }
+  
+ .video-container video {
+    border-radius: 1rem;
+    width: 100%;
+    opacity: 0.9;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+  }
+  
+ .video-container .controls {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+ .video-container .controls span {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: .7rem;
+  }
+  
+  .video-container .controls span:hover {
+    background: #29d9d5;
+  }
+
+.destination {
+    width: 90%;
+    margin: auto;
+}
+
+.destination .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .destination .box-container .box {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #222;
+  }
+  
+  .destination .box-container .box:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .destination .box-container .box .image {
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .destination .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .destination .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .destination .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .destination .box-container .box .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+  .destination .box-container .box .content a {
+    font-size: 1.7rem;
+    color: var(--action);
+  }
+  
+  .destination .box-container .box .content a:hover i {
+    padding-left: 1rem;
+  }
+  
+  .destination .box-container .box .content a i {
+    padding-right: .5rem;
+  }
+
+  .form-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .form-group {
+    width: 100%;
+   margin-bottom: 0.5em;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+  }
+  .form-group  label {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.1em;
+  }
+
+  .form-control  {
+    width: 100%;
+    border: 1px solid var(--action);
+    height: 50px;
+
+  }
+
+  .form-info {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .send-btn {
+    margin: auto;
+    border: 1px solid var(--action);
+    padding: 1em;
+    width: 12em;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .form-control-area {
+    width: 100%;
+    border: 1px solid var(--action);
+    height: 100px;
+  }
+
+  .form-content {
+    min-width: 80%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .heading {
+    text-align: left;
+    margin-top: 6em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heading span {
+    color: var(--secondary) !important;
+    font-size: 1.5rem;
+        font-weight: bolder;
+        color: #fff;
+        font-size: 4vw;
+        display: block;
+        position: relative;
+        z-index: 2;
+  }
+  
+  .heading h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+
+.gallery {
+    width: 90%;
+    margin: auto;
+}
+.gallery .box-container {
+    -webkit-columns: 3 25rem;
+            columns: 3 25rem;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+  
+  .gallery .box-container .box {
+    margin-bottom: 1rem;
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+  }
+  
+  .gallery .box-container .box img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery .box-container .box span {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+  
+  .gallery .box-container .box h3 {
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: #fff;
+  }
